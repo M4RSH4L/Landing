@@ -545,7 +545,7 @@ footer {
 
 
 
-  ///////////DECLARE FONTS///////////
+  /* ///////////DECLARE FONTS/////////// */
 .font--robotoslab {
   font-family: 'Roboto Slab', Georgia, serif;
   font-weight: 700;
@@ -576,7 +576,7 @@ footer {
   font-weight: 400;
 }
 
-///////////END DECLARE FONTS///////////
+/* ///////////END DECLARE FONTS/////////// */
 
 
 * {
@@ -753,14 +753,14 @@ padding: 30px 60px;
 
 $animationSpeed: 40s;
 
-// Animation
+/* // Animation */
 @keyframes scroll {
 	0% { transform: translateX(0); }
 	100% { transform: translateX(calc(-250px * 7))}
 }
 
 
-// Styling
+/* // Styling */
 .slider {
 	background: white;
 	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
