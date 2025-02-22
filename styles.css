@@ -153,6 +153,7 @@ body {
 }
 
 .icon{
+  vertical-align: baseline;
   width: 25px;
 }
 
@@ -382,6 +383,9 @@ footer {
   font-family: 'Poppins', sans-serif;
 }
 
+
+
+
 .car-icon {
   position: fixed;
   left: 50%;
@@ -394,6 +398,10 @@ footer {
       display: flex;
       flex-direction: column;
       
+  }
+  
+  .icon{
+    width: 15px;
   }
 
   .car-icon {
