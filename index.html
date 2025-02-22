@@ -16,6 +16,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=person" />
+    
+    <!-- carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+    
+    <script src="script.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -24,8 +34,7 @@
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="./Assets/imagenes/logo.png" class="logo"  alt="Logo">
-                    
-                </a>
+                      </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -50,178 +59,217 @@
     </header>
     
 
-    <!-- Three.js Canvas -->
+    <!-- Home -->
    
         <section id="estrategia" class="py-5 text-center">
             <div class="container">
                 <h1 class="fw-bold">
-                    Lo que vende no es la tienda, <br>
-                    es la estrategia
+                    Te ayudamos a crear tu tienda <br>
+                    entendiendo tu negocio
+                    
                 </h1>
-                <p class="subtitle">Agencia de Ecommerce <img src="./Assets/imagenes/verificado.png" alt="verificado" class ="verificado"></p>
+                <p class="subtitle">Agencia de Ecommerce 
+                <img src="./Assets/imagenes/verificado.png" alt="verificado" class ="verificado">
+                </p>
+                <div class="video-home">
                 <iframe 
-                
-                pading="20px"
-                src="https://www.youtube.com/embed/nrRj9J7dFlY?autoplay=1" 
-                title="YouTube video player" 
-                frameborder="0" 
+                class="iframe"
+                src="https://www.youtube.com/embed/qQEqY-96e1U?si=1DjXQPVzhe1nlBeU" ; title="title"; 
+                frameborder="0" ;
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
+                allowfullscreen;>
                 <p>Your browser does not support iframes.</p>
             </iframe> 
                 <p class="text-secondary">
-                    Una tienda solo es el engranaje de un negocio, nosotros te ayudamos
-                    a crear la estrategia para que tu negocio funcione.
+                    Agenda una auditoria co un especialista en comunicacion visual.
                 </p>
                 <a href="#" class="btn btn-gradient">
-                    Hablemos <span>&#8250;</span>
+                    Empezar
                 </a>
+            </div>
             </div>
         </section>
 
+   <!-- Primera Seccion 4 Pasos -->
 
-
+        <section class="steps-section">
+          <div class="container">
+              <h2 class="fw-bold mb-5" style="font-family: 'Anton', sans-serif;">Tu Tienda Online en 4 Pasos</h2>
+              
+              <img src="./Assets/imagenes/sphere-icon.gif" alt="Carrito" class="car-icon">
+              
+              <div class="steps-container">
+                  <div class="step">
+                      <div class="step-header">
+                        <h5>Primer paso</h5>
+                        <span class="step-number">1</span>
+                          <h3 class="step-title">Análisis del Negocio</h3>
+                          
+                          
+                      </div>
+                      <div class="gradient-line"></div>
+                      <span class="material-symbols-outlined">
+                        person
+                        </span>
+                        <ul>
+                            <li>
+                                <p class="step-text">Evaluamos tu mercado y </p>
+                                <p>creamos una estrategia personalizada.</p>
+                                <p>creamos una estrategia personalizada.</p>
+                            </li>
+                          
+                        </ul>
+                      
+                  </div>
+                  <div class="step">
+                      <div class="step-header">
+                          <span class="step-number">2</span>
+                          <h3 class="step-title">Diseño y Branding</h3>
+                      </div>
+                      <p class="step-text">Creamos una experiencia visual impactante y funcional.</p>
+                  </div>
+                  <div class="step">
+                      <div class="step-header">
+                          <span class="step-number">3</span>
+                          <h3 class="step-title">Integración de Tecnología</h3>
+                      </div>
+                      <p class="step-text">Configuramos pagos, envíos y automatizaciones.</p>
+                  </div>
+                  <div class="step">
+                      <div class="step-header">
+                          <span class="step-number">4</span>
+                          <h3 class="step-title">Lanzamiento y Crecimiento</h3>
+                      </div>
+                      <p class="step-text">Optimizamos y escalamos tu tienda con estrategias de crecimiento.</p>
+                  </div>
+              </div>
+          </div>
+      </section>
  
 
-<!-- Tercera seccion -->
-<section>     <div class="container my-5">
-    <div class="custom-card-video">
-      <!-- Parte superior con blur -->
-      <div class="card-top-video">
-        <h2 class="display-4 fw-bold">
-            Grow Your Business <span>with <br>Our  <br>Solution</span>
-        </h2>
-        <p class="">
-            Learn the most valuable strategies and techniques to scale your business effectively in today's digital landscape.
-        </p>
-    </div>
-        
-      <!-- Parte inferior con los pasos -->
-      <div class="card-bottom-video">
-       <iframe 
-       
-    pading="20px"
-    src="https://www.youtube.com/embed/nrRj9J7dFlY?autoplay=1" 
-    title="YouTube video player" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-</iframe> 
-      </div>
-    </div>
-  </div></section>
-  
+<!-- Carrousel seccion -->
 
 
-
-<section>     <div class="container my-5">
-    <div class="custom-card2">
-      <!-- Parte superior con blur -->
-      <div class="card-top">
-        <h3>Tu Título Descriptivo Aquí</h3>
-        <p>Un pequeño párrafo que introduzca la sección.</p>
-      </div>
-      <!-- Parte inferior con los pasos -->
-      <div class="card-bottom">
-        <div class="steps">
-            
-          <div class="step">
-            <div class="step-icon square"><img src="../static/assets/vs.gif" alt=""></div>
-            <div>
-              <h5>Paso 1</h5>
-              <div class="gradient-line"></div>
-              <p>Diagnóstico personalizado
-                Agendamos una auditoría para entender tu negocio, <br>tus objetivos y donde estas parado en la creacion de tu  eCommerce. </p>
-            </div>
-          </div>
-          <div class="step">
-            <div class="step-icon cross"><img src="../static/assets/icon 1 (9).gif" alt=""></div>
-            <div>
-              <h5>Paso 2</h5>
-              <div class="gradient-line"></div>
-              <p>Propuesta a medida
-                Te presentamos un plan estratégico con las mejores soluciones para tu tienda online, ajustado a tu marca y presupuesto.</p>
-            </div>
-          </div>
-        </div>
-        <div class="divider"></div> 
-        <div class="steps">
-          <div class="step">
-            <div class="step-icon cross"><img src="../static/assets/icon 1 (7).gif" alt=""></div>
-            <div>
-              <h5>Paso 3</h5>
-              <div class="gradient-line"></div>
-              <p>Diseño y desarrollo
-                Nuestro equipo trabaja en la creación de tu eCommerce, combinando diseño, tecnología y optimización para que vendas más.</p>
-            </div>
-          </div>
-          <div class="step">
-            <div class="step-icon cross"><img src="../static/assets/icon 1 (3).gif" alt=""></div>
-            <div>
-              <h5>Paso 4</h5>
-              <div class="gradient-line"></div>
-              <p>Lanzamiento y acompañamiento
-                Te entregamos tu tienda lista para vender, con capacitación y soporte para que saques el máximo provecho.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div></section>
-
-    <section class="cards-section py-5">
-    <div class="container">
-        <div class="row g-4">
-            <!-- Card 1 -->
-            <div class="col-md-6">
-                <div class="custom-card" data-scroll>
-                    <div class="card-header">
-                        <img src="https://via.placeholder.com/50" alt="Icono 1" class="card-icon">
-                        <h3 class="card-title">Título 1</h3>
-                    </div>
-                    <div class="gradient-line"></div>
-                    <p class="card-text">Este es un breve texto que describe la información principal relacionada con esta tarjeta.</p>
-                </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="col-md-6">
-                <div class="custom-card" data-scroll>
-                    <div class="card-header">
-                        <img src="https://via.placeholder.com/50" alt="Icono 2" class="card-icon">
-                        <h3 class="card-title">Título 2</h3>
-                    </div>
-                    <div class="gradient-line"></div>
-                    <p class="card-text">Este es otro breve texto que describe la información principal relacionada con esta tarjeta.</p>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="col-md-6">
-                <div class="custom-card" data-scroll>
-                    <div class="card-header">
-                        <img src="https://via.placeholder.com/50" alt="Icono 3" class="card-icon">
-                        <h3 class="card-title">Título 3</h3>
-                    </div>
-                    <div class="gradient-line"></div>
-                    <p class="card-text">Aquí hay más texto relacionado con el tema principal de esta tarjeta.</p>
-                </div>
-            </div>
-            <!-- Card 4 -->
-            <div class="col-md-6">
-                <div class="custom-card" data-scroll>
-                    <div class="card-header">
-                        <img src="https://via.placeholder.com/50" alt="Icono 4" class="card-icon">
-                        <h3 class="card-title">Título 4</h3>
-                    </div>
-                    <div class="gradient-line"></div>
-                    <p class="card-text">Un texto adicional para describir esta tarjeta y sus características clave.</p>
-                </div>
-            </div>
-        </div>
-    </div>
 </section>
+<div>
+  <h2 class="us-proyect">Nuestros ultimos proyectos</h2>
+  
+</div>
+<div class="slider-outer">
+  <button class="nav-button prev">&#10094;</button>
+  <div class="owl-carousel owl-theme">
+      <div class="item">
+          <div class="card">
+              <div class="card-image">
+                  <img src="./Assets/imagenes/DIA DEL NIÑO.png" alt="Card image caption">
+              </div>
+              <h3>Lorem ipsum dolor</h3>
+              <p>Descripcion corta</p>
+          </div>
+      </div>
+      <div class="item">
+          <div class="card">
+              <div class="card-image">
+                  <img src="./Assets/imagenes/3.png" alt="Card image caption">
+              </div>
+              <h3>Lorem ipsum dolor</h3>
+              <p>Descripcion corta</p>
+          </div>
+      </div>
+      <div class="item">
+          <div class="card">
+              <div class="card-image">
+                  <img src="./Assets/imagenes/4.png" alt="Card image caption">
+              </div>
+              <h3>Lorem ipsum dolor</h3>
+              <p>Descripcion corta</p>
+          </div>
+      </div>
+  </div>
+  <button class="nav-button next">&#10095;</button>
+</div>
+
+       
+<!-- Paralex -->
+
+<div class="slider">
+	<div class="slide-track">
+		<div class="slide">
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+		</div>
+	</div>
+</div>
+
+<!-- Servicios -->
 
 
-        </div>
+  
+  <div class="slick-slider">
+    <li>
+    <div class="full-card">
+  
+      <div class="font-card robotoslab-card">
+        <h3 class="font--robotoslab">Roboto Slab</h3>
+        <p class="font--roboto">Roboto Slab is a slab serif in the Roboto family. It was designed by Christian Robertson.</p>
+        <a target="_blank" href="https://fonts.google.com/specimen/Roboto+Slab" class="explore-button">Explore</a>
+      </div>
+  
+      <div class="font-card roboto-card">
+        <h3 class="font--roboto">Roboto</h3>
+        <p class="font--roboto">Roboto is a sans-serif typeface family developed for the mobile operating system, Android.</p>
+        <a target="_blank" href="https://fonts.google.com/specimen/Roboto" class="explore-button">Explore</a>
+      </div>
+  
+      <div class="font-card roboto-card">
+        <h3 class="font--roboto">Roboto</h3>
+        <p class="font--roboto">Roboto is a sans-serif typeface family developed for the mobile operating system, Android.</p>
+        <a target="_blank" href="https://fonts.google.com/specimen/Roboto" class="explore-button">Explore</a>
+      </div>
+  
+    </div>
+    </li>
+    
+      
+
     </section>
     
 
