@@ -19,20 +19,11 @@ $(document).ready(function(){
 
 
 
+// Codigo de next en servicios
 
-$(document).ready(function() {
-  
-    $('.slick-slider').bxSlider({
-      minSlides: 1,
-      maxSlides: 1,
-      controls: false
-    });
-    
-    $( ".explore-button" ).hover(function() {
-      $( this ).parent().addClass("hovered-card");
-    }, function() {
-      $( this ).parent().removeClass("hovered-card");
-    }
-  );
-    
-  });
+// let currentIndex = 0;
+// function nextCard() {
+//     const cards = document.querySelector('.cards');
+//     const totalCards = document.querySelectorAll('.font-card').length;
+//     currentIndex = (currentIndex + 1) % totalCards;
+//     cards.style.transform = `translateX(-${currentIndex * 100}%)`;}
