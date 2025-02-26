@@ -322,7 +322,7 @@ footer {
 
 /* 4 pasos */
 .steps-section {
-  background-color: #eeeeee;
+  background-color: #cbd5ff;
   font-family: 'Poppins', sans-serif;
   text-align: center;
   color: black;
@@ -333,7 +333,7 @@ footer {
  h5 {
   /* border-radius: 12px; */
   color: aliceblue;
-  background-color: #247ecc;
+  background: linear-gradient(to right, #9d00ff, #00ceff);
   padding: 12px;
   text-align: -webkit-center;
   width: 100%;
@@ -585,6 +585,7 @@ footer {
 /* ///////////END DECLARE FONTS/////////// */
 
 .containeer {
+  place-self: center;
   display: flex;
   align-items: center;
   width: 90%;
