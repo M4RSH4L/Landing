@@ -322,7 +322,7 @@ footer {
 
 /* 4 pasos */
 .steps-section {
-  background-color: #cb9bff;
+  background-color: #000000;
   font-family: 'Poppins', sans-serif;
   text-align: center;
   color: black;
@@ -426,8 +426,10 @@ footer {
  }
 }
 
-
-
+.fw-bold{
+text-transform: uppercase;
+font-weight: 700 !important;
+}
 
 
 /*Carrousel*/
@@ -590,13 +592,14 @@ footer {
 
 .containeer {
   place-self: center;
-  display: flex;
+  display: flex
+;
   align-items: center;
-  width: 90%;
-  max-width: 1200px;
-  background: white;
+  /* width: 90%; */
+  /* max-width: 1200px; */
+  background: rgb(0, 0, 0);
   padding: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); */
   border-radius: 10px;
 }
 
@@ -629,21 +632,23 @@ footer {
   background-position: center;
 }
 
-.roboto-card {
-  background-image: url('https://res.cloudinary.com/dqj168cdc/image/upload/v1480287191/robot-image_iai6lv.jpg');
+.roboto-card {background: linear-gradient(to right, #4839ff, #a900ff);
+  /* background-image: url('https://res.cloudinary.com/dqj168cdc/image/upload/v1480287191/robot-image_iai6lv.jpg'); */
 }
 
-.lobster-card {
-  background-image: url('https://res.cloudinary.com/dqj168cdc/image/upload/v1480349796/lobster-image_pznrao.jpg');
+.lobster-card {background: linear-gradient(to right, #4839ff, #a900ff);
+  /* background-image: url('https://res.cloudinary.com/dqj168cdc/image/upload/v1480349796/lobster-image_pznrao.jpg'); */
 }
 
-.eczar-card {
-  background-image: url('https://res.cloudinary.com/dqj168cdc/image/upload/v1480522564/turtle-image_nblim1.jpg');
+.eczar-card {background: linear-gradient(to right, #4839ff, #a900ff);
+  /* background-image: url('https://res.cloudinary.com/dqj168cdc/image/upload/v1480522564/turtle-image_nblim1.jpg'); */
 }
 
 .font-description {
-  width: 40%;
-  padding: 20px;
+  color: #c9c9c9;
+    align-self: baseline;
+    width: 40%;
+    padding: 20px;
 }
 
 h2 {
