@@ -632,8 +632,7 @@ font-weight: 700 !important;
 }
 
 .roboto-card {background: linear-gradient(to right, #4839ff, #a900ff);
-  /* background-image: url('https://res.cloudinary.com/dqj168cdc/image/upload/v1480287191/robot-image_iai6lv.jpg'); */
-}
+  }
 
 .lobster-card {background: linear-gradient(to right, #4839ff, #a900ff);
   /* background-image: url('https://res.cloudinary.com/dqj168cdc/image/upload/v1480349796/lobster-image_pznrao.jpg'); */
