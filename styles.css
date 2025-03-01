@@ -592,8 +592,7 @@ font-weight: 700 !important;
 
 .containeer {
   place-self: center;
-  display: flex
-;
+  display: flex;
   align-items: center;
   /* width: 90%; */
   /* max-width: 1200px; */
@@ -653,7 +652,7 @@ font-weight: 700 !important;
 
 h2 {
   font-size: 2rem;
-  color: #333;
+  color: #a8a8a8;
 }
 
 .button-containeer {
