@@ -703,7 +703,7 @@ h2 {
 /* Slider */
 
 .slider {
-  width: 75vw;
+  /* width: 75vw; */
   height: auto;
   margin: auto;
   overflow: hidden;
@@ -717,7 +717,7 @@ h2 {
 }
 
 .slider .slide {
-  width: 200px;
+  /* width: 200px; */
 }
 
 .slider .slide img {
