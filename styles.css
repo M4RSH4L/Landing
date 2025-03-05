@@ -727,7 +727,8 @@ h2 {
 } */
 
 .slider .slide img {
-  margin: 8% 0% 0% 0%;
+  padding: 0 0 0 14%;
+  margin: 8% 0% 9% 0%;
   width: 500px;
 }
 .slider .slide2 img {
