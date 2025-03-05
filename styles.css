@@ -13,8 +13,8 @@ appearance: none;
 }
 
 .us-proyect{
-  padding-top: 2%;
-    padding-bottom: 3%;
+  box-shadow: 0 15px 20px -15px rgb(0 0 0 / 0%), 0 55px 50px -35px rgb(12 12 12 / 16%);
+  padding: 2% 3% 3% 2%;
     font-family: 'Anton', sans-serif;
     font-size: 40px;
     /* font-weight: bold; */
