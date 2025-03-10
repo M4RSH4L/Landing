@@ -29,7 +29,14 @@ appearance: none;
     width: 20px;
 }
 img, svg {
-  width: 100%;
+  width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+  img, svg {
+    width: 100%;
+  }
+  
 }
 
 .home-img{
@@ -322,6 +329,7 @@ footer {
 
 /* 4 pasos */
 .steps-section {
+  border-radius: 20px;
   background-color: #eef4fe;
   font-family: 'Poppins', sans-serif;
   text-align: center;
@@ -596,15 +604,15 @@ font-weight: 700 !important;
   border-radius: 20px;
     background-color: #eef4fe;
     place-self: center;
-    display: flex
-;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     /* width: 96%; */
     /* max-width: 1200px; */
     /* background: rgb(0, 0, 0); */
     padding: 20px;
     /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); */
-    /* border-radius: 10px;
+    /* border-radius: 10px;*/
 }
 
 .cards-containeer {
@@ -623,17 +631,13 @@ font-weight: 700 !important;
 }
 
 .font-card {
-  box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 55px 50px -35px rgba(0, 0, 0, 0.3);
   margin: 2%;
-  text-align-last: end;
+  text-align-last: start;
   height: 200px;
   min-width: 75%;
   padding: 20px;
-  text-align: center;
+  /* text-align: center; */
   color: white;
-  border-radius: 10px;
-  background-size: cover;
-  background-position: center;
 }
 
 .roboto-card {border-radius: 12px;
@@ -656,7 +660,7 @@ font-weight: 700 !important;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   color: #000000;
 }
 
@@ -753,3 +757,19 @@ h2 {
       transform: translateX(calc(-200px * 7));
   }
 }
+
+
+
+.our-partners{
+  width: 100%;
+    text-align: center;
+    
+}
+.carta{
+  margin: 1% 3% 1% 1%;
+  box-shadow: 4px 4px 6px #bebebedb, -3px -3px 10px #ffffff;
+  border-radius: 12px;
+  display: inline-block;
+  width: 23%;
+}
+
