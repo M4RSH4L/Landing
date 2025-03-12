@@ -12,6 +12,10 @@ appearance: none;
 
 }
 
+.h3, h3 {
+  font-family: 'Anton';
+  font-size: calc(1.3rem + .6vw);
+}
 .us-proyect{
   border-bottom: inset;
   padding: 2% 3% 3% 2%;
@@ -320,17 +324,24 @@ footer {
 
 /* Gradient line */
 .gradient-line {
-  width: 25%;
+  width: 27%;
   height: 3px;
   border-radius: 2px;
-  background: linear-gradient(to right, #00ffef, #ff00fa);
+  background: linear-gradient(to right, #e6ff00, #000000);
+  margin: 10px 0;
+}
+.gradient-line2 {
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(to right, #ac00ff, #000000);
   margin: 10px 0;
 }
 
 /* 4 pasos */
 .steps-section {
   border-radius: 20px;
-  background-color: #eef4fe;
+  background-color: #00050c;
   font-family: 'Poppins', sans-serif;
   text-align: center;
   color: rgb(255, 255, 255);
@@ -360,7 +371,7 @@ footer {
 }
 .step {
   
-  box-shadow: 0 15px 20px -15px rgb(0 0 0), 0 55px 50px -35px rgb(57 57 57 / 63%);
+  box-shadow: 0 15px 20px -15px rgb(0 0 0), 0 55px 50px -35px rgb(0 0 0 / 10%);
   border-radius: 12px;
   background: linear-gradient(to right, #000000, #191919);
   text-align: left;
@@ -526,7 +537,7 @@ font-weight: 700 !important;
     background: #9e00ff;
     border: none;
     transition: all 0.3sease-in-out;
-    box-shadow: 0px 4px 10px rgb(0 49 255 / 63%);
+    box-shadow: 2px 5px 6px rgb(135 135 135 / 48%);
 }
     .btn-gradient:hover {
         transform: scale(1.05);
@@ -602,17 +613,14 @@ font-weight: 700 !important;
 
 .containeer {
   border-radius: 20px;
-    background-color: #eef4fe;
+    background-color: #00050c;
     place-self: center;
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* width: 96%; */
-    /* max-width: 1200px; */
-    /* background: rgb(0, 0, 0); */
-    padding: 20px;
-    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); */
-    /* border-radius: 10px;*/
+    margin-top: 7%;
+    padding: 3% 0% 3% 0%;
+    
 }
 
 .cards-containeer {
@@ -641,31 +649,32 @@ font-weight: 700 !important;
 }
 
 .roboto-card {border-radius: 12px;
-  background: linear-gradient(to right, #000000, #000734);;
+  background: linear-gradient(to right, #000000, #000000d9);
   }
 
 .lobster-card {border-radius: 12px;
-  background: linear-gradient(to right, #000000, #000734);}
+  background: linear-gradient(to right, #000000, #000000d9);}
 
 .eczar-card {border-radius: 12px;
-  background: linear-gradient(to right, #000000, #000734);
+  background: linear-gradient(to right, #000000, #000000d9);
   /* background-image: url('https://res.cloudinary.com/dqj168cdc/image/upload/v1480522564/turtle-image_nblim1.jpg'); */
 }
 
 .font-description {
   color: #c9c9c9;
     align-self: baseline;
-    width: 40%;
+    width: 50%;
     padding: 20px;
 }
 
 h2 {
+  font-family: 'Anton';
   font-size: 3rem;
-  color: #000000;
+  color: #ececec;
 }
 
 .button-containeer {
-  text-align: center;
+  /* text-align: center; */
   margin-top: 10px;
 }
 
@@ -690,11 +699,11 @@ h2 {
   font-weight: bold;
   font-size: 16px;
   align-self: center;
-  width: 89%;
+  /* width: 89%; */
   padding: 6px 20px;
   border: none;
-  background-color: #ff00f8;
-  color: #ffffff;
+  background-color: #f6ff00;
+  color: #000000;
   font-size: 1rem;
   cursor: pointer;
   border-radius: 5px;
