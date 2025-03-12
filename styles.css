@@ -639,6 +639,7 @@ font-weight: 700 !important;
 }
 
 .font-card {
+  display: inline-grid;
   margin: 2%;
   text-align-last: start;
   height: 200px;
