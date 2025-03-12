@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
       window.addEventListener("scroll", () => {
         letters.forEach((letter) => {
           const rect = letter.getBoundingClientRect(); // Posición de la letra en pantalla
-          const offset = window.innerHeight * 1.3; // Punto en el que empieza a cambiar
+          const offset = window.innerHeight * 3; // Punto en el que empieza a cambiar
   
           // Calculamos la visibilidad individual de cada letra
           let visibility = (offset - rect.top) / offset;

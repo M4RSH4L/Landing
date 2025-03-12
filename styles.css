@@ -795,6 +795,6 @@ h2 {
 
 #text-white span, #text-black span {
   color: rgb(0, 0, 0); /* Gris inicial */
-  transition: color 0.2s linear;
+  transition: color 0.1s linear;
 }
 
