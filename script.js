@@ -39,14 +39,14 @@ document.addEventListener("DOMContentLoaded", () => {
       window.addEventListener("scroll", () => {
         letters.forEach((letter) => {
           const rect = letter.getBoundingClientRect(); // Posición de la letra en pantalla
-          const offset = window.innerHeight * 3; // Punto en el que empieza a cambiar
+          const offset = window.innerHeight * 2; // Punto en el que empieza a cambiar
   
           // Calculamos la visibilidad individual de cada letra
           let visibility = (offset - rect.top) / offset;
           visibility = Math.min(Math.max(visibility, 0), 1); // Limitar entre 0 y 1
   
           // Aplicamos el color según el grupo de texto
-          letter.style.color = `rgba(${targetColor === "black" ? "0, 0, 0" : "255, 255, 255"}, ${visibility})`;
+          letter.style.color = `rgba(${targetColor === "black" ? "49, 49, 49" : "255, 255, 255"}, ${visibility})`;
         });
       });
     }
@@ -56,4 +56,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   
   
-  
+  document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle').forEach((faqItem) => {
+    faqItem.addEventListener('click', () => {
+      faqItem.parentNode.classList.toggle('faq-active');
+    });
+  });
