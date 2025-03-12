@@ -30,3 +30,30 @@ $(document).ready(function(){
 
 
 
+// Animacion de letras.$
+
+document.addEventListener("DOMContentLoaded", () => {
+    function applyScrollEffect(elementId, targetColor) {
+      const letters = document.querySelectorAll(`#${elementId} span`);
+  
+      window.addEventListener("scroll", () => {
+        letters.forEach((letter) => {
+          const rect = letter.getBoundingClientRect(); // Posición de la letra en pantalla
+          const offset = window.innerHeight * 1.3; // Punto en el que empieza a cambiar
+  
+          // Calculamos la visibilidad individual de cada letra
+          let visibility = (offset - rect.top) / offset;
+          visibility = Math.min(Math.max(visibility, 0), 1); // Limitar entre 0 y 1
+  
+          // Aplicamos el color según el grupo de texto
+          letter.style.color = `rgba(${targetColor === "black" ? "0, 0, 0" : "255, 255, 255"}, ${visibility})`;
+        });
+      });
+    }
+  
+    applyScrollEffect("text-white", "white"); // Letras que cambian a blanco
+    applyScrollEffect("text-black", "black"); // Letras que cambian a negro
+  });
+  
+  
+  

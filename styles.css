@@ -783,3 +783,18 @@ h2 {
   width: 23%;
 }
 
+/* Letras animadas */
+
+#text-white, #text-black {
+  text-transform: uppercase;
+  display: flex;
+  font-size: 3rem;
+  font-family: 'Anton';
+  gap: 3px;
+}
+
+#text-white span, #text-black span {
+  color: rgb(0, 0, 0); /* Gris inicial */
+  transition: color 0.2s linear;
+}
+
