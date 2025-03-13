@@ -18,7 +18,8 @@ appearance: none;
 }
 .us-proyect{
   border-bottom: inset;
-  padding: 2% 3% 3% 2%;
+  padding: 4% 3% 3% 2%;
+
     font-family: 'Anton', sans-serif;
     font-size: 40px;
     /* font-weight: bold; */
@@ -803,14 +804,25 @@ h2 {
 /*--------------------------------------------------------------
 # Faq 2 Section
 --------------------------------------------------------------*/
+.faqa{
+  text-align: center;
+  margin:0% 0% 10% 0%;
+}
+.faq-2 {
+  /* width: 85%; */
+}
 .containerr{
-  margin: 5% 0% 0% 5%;
+  text-align: -webkit-center;
+  /* margin: 4% 4% 0% 4%; */
 }
 .faq-2 .faq-containerr {
   margin-top: 15px;
 }
 
 .faq-2 .faq-containerr .faq-item {
+  width: 85%;
+  border-radius: 12px;
+  box-shadow: 4px 4px 6px #bebebedb, -3px -3px 10px #ffffff;
   background-color: var(--surface-color);
   position: relative;
   padding: 20px;
@@ -826,7 +838,7 @@ h2 {
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
-  margin: 0 30px 0 32px;
+  /* margin: 0 30px 0 32px; */
   transition: 0.3s;
   cursor: pointer;
 }
