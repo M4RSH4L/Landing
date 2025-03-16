@@ -31,33 +31,36 @@ $(document).ready(function(){
 
 
 // Animacion de letras.$
+document.addEventListener("DOMContentLoaded", function () {
+  function revealSteps() {
+      let section = document.querySelector(".steps-section");
+      let steps = document.querySelectorAll(".step");
+      let screenPosition = window.innerHeight * 0.8; // Ajuste para mejor detección
 
-document.addEventListener("DOMContentLoaded", () => {
-    function applyScrollEffect(elementId, targetColor) {
-      const letters = document.querySelectorAll(`#${elementId} span`);
-  
-      window.addEventListener("scroll", () => {
-        letters.forEach((letter) => {
-          const rect = letter.getBoundingClientRect(); // Posición de la letra en pantalla
-          const offset = window.innerHeight * 2; // Punto en el que empieza a cambiar
-  
-          // Calculamos la visibilidad individual de cada letra
-          let visibility = (offset - rect.top) / offset;
-          visibility = Math.min(Math.max(visibility, 0), 1); // Limitar entre 0 y 1
-  
-          // Aplicamos el color según el grupo de texto
-          letter.style.color = `rgba(${targetColor === "black" ? "49, 49, 49" : "255, 255, 255"}, ${visibility})`;
-        });
+      if (section) {
+          let sectionPosition = section.getBoundingClientRect().top;
+
+          if (sectionPosition < screenPosition) {
+              section.classList.add("visible");
+          } else {
+              section.classList.remove("visible");
+          }
+      }
+
+      steps.forEach(step => {
+          let position = step.getBoundingClientRect().top;
+
+          if (position < screenPosition) {
+              step.classList.add("visible");
+          } else {
+              step.classList.remove("visible"); // Se oculta si vuelve a salir de la vista
+          }
       });
-    }
-  
-    applyScrollEffect("text-white", "white"); // Letras que cambian a blanco
-    applyScrollEffect("text-black", "black"); // Letras que cambian a negro
-  });
-  
-  
-  document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle').forEach((faqItem) => {
-    faqItem.addEventListener('click', () => {
-      faqItem.parentNode.classList.toggle('faq-active');
-    });
-  });
+  }
+
+  window.addEventListener("scroll", revealSteps);
+  revealSteps(); // Llamado inicial para verificar la visibilidad
+});
+
+
+

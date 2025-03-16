@@ -341,6 +341,9 @@ footer {
 
 /* 4 pasos */
 .steps-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
   border-radius: 20px;
   background-color: #00050c;
   font-family: 'Poppins', sans-serif;
@@ -348,6 +351,11 @@ footer {
   color: rgb(255, 255, 255);
   padding: 80px 20px;
   position: relative;
+}
+
+.steps-section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
  h5 {
@@ -370,7 +378,7 @@ footer {
   max-width: 900px;
   margin: auto;
 }
-.step {
+.step { 
   
   box-shadow: 0 15px 20px -15px rgb(0 0 0), 0 55px 50px -35px rgb(0 0 0 / 10%);
   border-radius: 12px;
@@ -381,6 +389,7 @@ footer {
 ;
   flex-direction: column;
 }
+
 
 .step, image{
   width: auto;
@@ -786,18 +795,7 @@ h2 {
 
 /* Letras animadas */
 
-#text-white, #text-black {
-  text-transform: uppercase;
-  display: flex;
-  font-size: 3rem;
-  font-family: 'Anton';
-  gap: 3px;
-}
 
-#text-white span, #text-black span {
-  color: rgb(0, 0, 0); /* Gris inicial */
-  transition: color 0.1s linear;
-}
 
 
 
