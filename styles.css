@@ -622,6 +622,9 @@ font-weight: 700 !important;
 /* ///////////END DECLARE FONTS/////////// */
 
 .containeer {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
   border-radius: 20px;
     background-color: #00050c;
     place-self: center;
@@ -633,20 +636,35 @@ font-weight: 700 !important;
     
 }
 
+.containeer.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .cards-containeer {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
   width: 60%;
   display: flex;
   overflow: hidden;
   position: relative;
 }
 
+.cards-containeer.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .cards {
+  
   padding: 4px;
   display: flex
 ;
   /* transition: transform 0.5sease-in-out; */
   flex-direction: column;
 }
+
 
 .font-card {
   display: inline-grid;
@@ -815,9 +833,12 @@ h2 {
   /* width: 85%; */
 }
 .containerr{
+  
   text-align: -webkit-center;
   /* margin: 4% 4% 0% 4%; */
 }
+
+
 .faq-2 .faq-containerr {
   margin-top: 15px;
 }

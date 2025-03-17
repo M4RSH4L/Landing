@@ -33,8 +33,8 @@ $(document).ready(function(){
 // Animacion de letras.$
 document.addEventListener("DOMContentLoaded", function () {
   function revealSteps() {
-      let section = document.querySelector(".steps-section");
-      let steps = document.querySelectorAll(".step");
+      let section = document.querySelector(".steps-section , .containeer");
+      let steps = document.querySelectorAll(".step , .containeer, .cards-containeer");
       let screenPosition = window.innerHeight * 0.8; // Ajuste para mejor detección
 
       if (section) {
