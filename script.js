@@ -1,3 +1,4 @@
+// Carousel
 $(document).ready(function(){
     var owl = $('.owl-carousel');
     owl.owlCarousel({
@@ -19,18 +20,9 @@ $(document).ready(function(){
 
 
 
-// Codigo de next en servicios
-
-// let currentIndex = 0;
-// function nextCard() {
-//     const cards = document.querySelector('.cards');
-//     const totalCards = document.querySelectorAll('.font-card').length;
-//     currentIndex = (currentIndex + 1) % totalCards;
-//     cards.style.transform = `translateX(-${currentIndex * 100}%)`;}
 
 
-
-// Animacion de letras.$
+// Animacion de aparicion gradual
 document.addEventListener("DOMContentLoaded", function () {
   function revealSteps() {
       let section = document.querySelector(".steps-section , .containeer");
@@ -62,5 +54,27 @@ document.addEventListener("DOMContentLoaded", function () {
   revealSteps(); // Llamado inicial para verificar la visibilidad
 });
 
+
+
+// Desplegable
+function toggleText(event) {
+    // Obtener el botón y el texto en el contexto de la tarjeta específica
+    let toggleButton = event.target;
+    let text = toggleButton.previousElementSibling;  // Asume que el texto está antes del botón
+
+    // Cambiar la visibilidad del texto y el texto del botón
+    if (text.style.display === "none" || text.style.display === "") {
+        text.style.display = "block";
+        toggleButton.textContent = "Ver menos.";
+    } else {
+        text.style.display = "none";
+        toggleButton.textContent = "Ver más...";
+    }
+}
+
+// Añadir el evento a todos los botones con la clase 'toggle-text'
+document.querySelectorAll('.toggle-text').forEach(button => {
+    button.addEventListener('click', toggleText);
+});
 
 
