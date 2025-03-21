@@ -488,7 +488,7 @@ font-weight: 700 !important;
   border-radius: 10px;
   
   background: white;
-  padding: 50px;
+  
   text-align: center;
 }
 .card-image img {
@@ -518,6 +518,7 @@ font-weight: 700 !important;
   right: -50px;
 }
 @media (max-width: 768px) {
+  .us-proyect{font-size: 40px;}
   .slider-outer { width: 90%; }
   .nav-button {
       padding: 10px 15px;
@@ -945,7 +946,7 @@ h2 {
 
 .toggle-text {
   font-size: 18px;
-  color: #7700ff;
+  color: #8a2be2;
   cursor: pointer;
 }
 
